@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{7D85EEDB-B279-39AC-9D36-41AD29C2C292}") = "dragon-hunters", "Assembly-CSharp.csproj", "{F47170EA-7E5E-DF6A-27CF-30790BE19413}"
+EndProject
+Project("{7D85EEDB-B279-39AC-9D36-41AD29C2C292}") = "dragon-hunters", "Assembly-CSharp-Editor.csproj", "{79FB2E7E-BA8C-F8AB-8C0B-DBCE62DB799E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F47170EA-7E5E-DF6A-27CF-30790BE19413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47170EA-7E5E-DF6A-27CF-30790BE19413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47170EA-7E5E-DF6A-27CF-30790BE19413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47170EA-7E5E-DF6A-27CF-30790BE19413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79FB2E7E-BA8C-F8AB-8C0B-DBCE62DB799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FB2E7E-BA8C-F8AB-8C0B-DBCE62DB799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FB2E7E-BA8C-F8AB-8C0B-DBCE62DB799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FB2E7E-BA8C-F8AB-8C0B-DBCE62DB799E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
