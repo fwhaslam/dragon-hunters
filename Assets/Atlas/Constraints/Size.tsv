@@ -1,0 +1,10 @@
+Value	Tag	Description
+# Size is measures used with Figures, height for bipeds, length for quadripeds		
+#->Size,Figures		
+P	Pixy	Pixy sized or smaller creature, under 1.5 foot in size
+D	Dwarf	Dwarf sized creature, approximately 2-4 foot in size
+H	Human	Human sized creature, approximately 5-8 feet in size
+O	Ogre	Ogre sized creature, approximately 9-16 feet in size
+G	Giant	Giant sized creature, approximately 17-32 feet in size
+T	Titan	Titan/Dragon sized creature, over 33 feet in size
+# end of document		

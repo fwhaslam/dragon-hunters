@@ -1,0 +1,7 @@
+{
+	"_purpose":"Basic agent template.  Agent is a tactial actor.",
+	
+	"type":"Animal.Name|Beast.name",
+
+	"Size":""
+}
