@@ -1,0 +1,12 @@
+﻿{
+	"name":"sample",
+	"list":[
+		"one",
+		"two"
+	],
+	"child":{
+		"age":12,
+		"male":false,
+		"hair":"black"
+	}
+}
