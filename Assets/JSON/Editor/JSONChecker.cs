@@ -37,7 +37,7 @@ public class JSONChecker : EditorWindow {
             j.ToString(true);
             Profiler.EndSample();
 #else
-			j = JSONObject.Create(JSON);
+			j = JSONObject.Create(JSON, -2, false, false);
 #endif
 			Debug.Log(j.ToString(true));
 		}
@@ -51,7 +51,7 @@ public class JSONChecker : EditorWindow {
 				Debug.Log(test.error);
 			} else {
 				Debug.Log(test.text);
-				j = new JSONObject(test.text);
+				j = new JSONObject(test.text, -2, false, false);
 				Debug.Log(j.ToString(true));
 			}
 		}
