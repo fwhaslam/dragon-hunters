@@ -4,3 +4,7 @@ obj/
 /Temp
 obj/
 .DS_Store
+.idea
+**/.idea
+*.iml
+**/*.iml
