@@ -8,16 +8,32 @@ public class TacticalControl : MonoBehaviour {
 
 	public GameObject tileParent;
 
+	public GameObject textParent;
+
 	// Use this for initialization
 	void Start () {
 
+		fixTileTypes ();
+		buildSimpleMap ();
+		createVisualMap ( TacticalShared.map );
+
+		GameObject text = TextUtil.makeText3D ("somekey","Some <b>Bold</b> Words", 0f, 0f);
+		TextUtil.addToScene (text, textParent);
+
+	}
+
+	/**
+	 * Inject tile types into shared space.
+	 */
+	void fixTileTypes(){
 		foreach (TileType tileType in tileTypeList)
 			TacticalShared.tileTypes.add (tileType);
-	
-		SimpleMap.make (TacticalShared.map, TacticalShared.tileTypes);
-
-		createVisualMap ( TacticalShared.map );
 	}
+
+	void buildSimpleMap(){
+		SimpleMap.make (TacticalShared.map, TacticalShared.tileTypes);
+	}
+		
 
 	void createVisualMap( TacticalMap map ){
 
