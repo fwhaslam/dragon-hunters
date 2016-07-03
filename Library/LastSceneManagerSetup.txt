@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tactial.unity
+- path: Assets/Scenes/VisualEffects.unity
   isLoaded: 1
   isActive: 1

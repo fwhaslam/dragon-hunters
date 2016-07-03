@@ -1,0 +1,11 @@
+
+
+How to add lines, to make 'roads' on roadmap.
+
+How to add icons like circle in circle or star, to represent cities etal.
+
+How to add plasma fields ( generated instead of artwork ) for use with textures.
+
+How to do figure outline ( see outline shader )
+
+How to to flat shape outline - do I just need smarter lines ?
