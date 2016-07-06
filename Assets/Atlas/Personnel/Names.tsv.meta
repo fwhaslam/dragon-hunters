@@ -1,7 +1,9 @@
 fileFormatVersion: 2
 guid: 1ceb434220d2b41fa920734a01f74681
 timeCreated: 1464032468
-licenseType: Free
+licenseType: MIT License
+notice: Copyright (c) 2016 Frederick William Haslam
+source: http:///www.fiends.com
 DefaultImporter:
   userData: 
   assetBundleName: 

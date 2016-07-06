@@ -2,4 +2,5 @@ Name	Size	Speed	Travel	Tags	Descriptions
 #					
 Horse	O	F	Run	Fast	Sea biscuit, race tracks.
 Rabbit	P	A	Run		Little bunny
-Turtle	P	A		Slow	Small green with a shell, but usually no ninja powers
+Turtle	P	A	Swim,Run	Slow	Small green with a shell, but usually no ninja powers
+Pheasant	P	A	Fly		A pleasant afternoon feast.
