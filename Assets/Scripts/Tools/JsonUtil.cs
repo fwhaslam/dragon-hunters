@@ -6,15 +6,15 @@ using System;
 
 public class JsonUtil {
 
-	public void Dump(string msg,Exception ex){
+	static public void Dump(string msg,Exception ex){
 		Console.WriteLine(msg + ":::"+ ex.Message);
 	}
 
-	public JSONObject ReadJson(string filename){
+	static public JSONObject ReadJson(string filename){
 		return JSONObject.Create (Read (filename));
 	}
 
-	public string Read(string filename) {
+	static public string Read(string filename) {
 
 		string result = null;
 		
@@ -41,4 +41,5 @@ public class JsonUtil {
 		}
 		return result;
 	}
+
 }

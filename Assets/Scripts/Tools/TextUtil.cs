@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Text;
+using System.IO;  
+using System;  
 
 public class TextUtil {
 
