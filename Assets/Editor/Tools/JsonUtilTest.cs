@@ -7,7 +7,7 @@ public class JsonUtilTest {
 	[Category("Failing Tests")]
 	public void Read(){
 
-		string result = new JsonUtil ().Read ("Assets/Editor/utils/SampleReadFile.txt");
+		string result = JsonUtil.Read ("Assets/Editor/Tools/SampleReadFile.txt");
 
 		Assert.AreEqual ("Hello There", result);
 
@@ -17,8 +17,8 @@ public class JsonUtilTest {
 	[Category("Failing Tests")]
 	public void ReadJson(){
 
-		string body = new JsonUtil ().Read ("Assets/Editor/utils/SampleJsonFile.json");
-		JSONObject result = new JsonUtil ().ReadJson("Assets/Editor/utils/SampleJsonFile.json");
+		string body = JsonUtil.Read ("Assets/Editor/Tools/SampleJsonFile.json");
+		JSONObject result = JsonUtil.ReadJson("Assets/Editor/Tools/SampleJsonFile.json");
 
 		Assert.AreEqual ( body, 
 			result.ToString(true));
