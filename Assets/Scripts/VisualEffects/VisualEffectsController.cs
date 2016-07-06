@@ -3,8 +3,15 @@ using System.Collections;
 
 public class VisualEffectsController : MonoBehaviour {
 
+	static float TICKS_PER_MILLI = 10000f;
+
 	// Use this for initialization
 	void Start () {
+
+		redraw ();
+	}
+
+	public void redraw(){
 
 		GameObject blackboard = GameObject.Find("Blackboard");
 //		blackboard.GetComponent<Renderer>().material.color = Color.red;
@@ -14,39 +21,31 @@ public class VisualEffectsController : MonoBehaviour {
 
 		long start = System.DateTime.Now.Ticks;
 		float[,] heights = MakePlasmaEffect (0.25f);
+		long mid = System.DateTime.Now.Ticks;
+		print ("MS for Plasma Algo = "+(mid-start)/TICKS_PER_MILLI);
 
-		float min = 0f;
-		float max = 0f;
+		heights = limitHeights (128, heights);
 
+		long mid2 = System.DateTime.Now.Ticks;
+		print ("MS to complete limits="+(mid2-mid)/TICKS_PER_MILLI);
+
+		// set texture
 		for (int y = 0; y < texture.height; y++) {
 			for (int x = 0; x < texture.width; x++) {
-				
-				float height = heights [x, y];   // range is 0f to 0.109f
-				if (height < min) min = height;
-				if (height > max) max = height;
-
-				// cuttoff at lighter color
-				height += 0.25f;
-				if (height > 1f) height = 1f;
-				if (height < 0.4f) height = 0.4f;
-
+				float height = heights [x, y];
 				Color color = new Color (height, height, height);
-
 				texture.SetPixel(x, y, color);
 			}
 		}
 		texture.Apply();
 
 		long end = System.DateTime.Now.Ticks;
-		print ("min/max=" + min + "/" + max+"   ticks to complete="+(end-start));
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		print ("MS to complete="+(end-mid2)/TICKS_PER_MILLI);
 	}
 
-
+	/**
+	 * 
+	 */
 	float[,] MakePlasmaEffect (float bumpy) {
 	
 		// map size
@@ -107,4 +106,33 @@ public class VisualEffectsController : MonoBehaviour {
 		return heights;
 	}
 
+	/**
+	 * 
+	 */
+	float[,] limitHeights( int size, float[,] heights ) {
+
+		float min = 0f;
+		float max = 0f;
+
+		for (int y = 0; y < size; y++) {
+			for (int x = 0; x < size; x++) {
+
+				float height = heights [x, y];   // range is 0f to 0.109f
+				if (height < min) min = height;
+				if (height > max) max = height;
+
+				// cuttoff at lighter color
+				height += 0.25f;
+				if (height > 1f) height = 1f;
+				if (height < 0.4f) height = 0.4f;
+
+				heights [x, y] = height;
+			}
+		}
+			
+		print ("min/max=" + min + "/" + max);
+
+		return heights;
+
+	}
 }

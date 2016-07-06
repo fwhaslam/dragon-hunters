@@ -1,7 +1,9 @@
 fileFormatVersion: 2
 guid: 527899f685e496640ab9b3bc3378ca0c
 timeCreated: 1466972599
-licenseType: Free
+licenseType: MIT License
+notice: Copyright (c) 2016 Frederick William Haslam
+source: http:///www.fiends.com
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
