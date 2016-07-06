@@ -1,7 +1,10 @@
+#
+#  Q2/2016 gitignore for dragon-hunders
+#
 Temp/
+/Temp
 obj/
 .vs/
-/Temp
 obj/
 .DS_Store
 Library/
@@ -10,3 +13,6 @@ Library/
 *.iml
 **/*.iml
 
+# be sure to include meta files
+!*.meta
+!*.*.meta
