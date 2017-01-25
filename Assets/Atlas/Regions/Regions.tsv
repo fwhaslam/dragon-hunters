@@ -1,0 +1,14 @@
+#
+#   Regions Tab separated file
+#
+Name	Scale	ContainedBy	Description
+Earth	Realm	Realms	Starting realm for the game.  Other realms may be added.
+Western	Hemisphere	Earth	Western hemisphere and culture.
+Easter	Hemisphere	Earth	Eastern hemisphere and culture.
+North America	Continent	Western
+South America	Continent	Western
+Europe	Continent	Western
+Asia	Continent	Eastern
+India	Continent	Eastern
+Africa	Continent	Western,Eastern
+Australia	Continent	Western
